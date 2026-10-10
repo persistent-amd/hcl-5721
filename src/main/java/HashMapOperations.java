@@ -28,7 +28,7 @@ public class HashMapOperations {
         System.out.println("Has value Ad? " + students.containsValue("Ad"));
 
         // 7. getOrDefault() - Return fallback if key is absent
-        System.out.println("Student 105: "
+        System.out.println("105: "
                 + students.getOrDefault(105, "Not Found"));
 
         // 8. remove() - Remove by key
