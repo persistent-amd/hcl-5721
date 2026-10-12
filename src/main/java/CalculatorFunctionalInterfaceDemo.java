@@ -18,9 +18,9 @@ public class CalculatorFunctionalInterfaceDemo {
 
         // Division
         Calculator divide = (a, b) -> {
-//            if (b == 0) {
-//                throw new ArithmeticException("Division by zero");
-//            }
+            if (b == 0) {
+                throw new ArithmeticException("Division by zero");
+            }
             return a / b;
         };
 
