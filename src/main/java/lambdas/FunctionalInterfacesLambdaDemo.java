@@ -34,6 +34,6 @@ public class FunctionalInterfacesLambdaDemo {
         Consumer<String> printer =
                 text -> System.out.println("Message: " + text);
 
-        printer.accept("Hello from Consumer!");
+        printer.accept("Hi from Consumer!");
     }
 }
