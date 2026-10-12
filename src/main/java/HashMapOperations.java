@@ -14,7 +14,7 @@ public class HashMapOperations {
         System.out.println("Map: " + students);
 
         // 3. get() - Retrieve value using key
-        System.out.println("Student 101: " + students.get(101));
+        System.out.println("collections.Student 101: " + students.get(101));
 
         // 4. Update a value
         students.put(102, "Aman");
