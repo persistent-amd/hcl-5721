@@ -92,5 +92,24 @@ public class StringStreamsFilterDemo {
                 .anyMatch(name -> name.startsWith("K"));
 
         System.out.println("Any name starting with K: " + hasKName);
+
+        // 11. Reduce strings into a single string
+        String combinedNames = names.stream()
+                .reduce("", (a, b) -> a.isEmpty() ? b : a + ", " + b);
+
+        System.out.println("Combined names: " + combinedNames);
+
+        // 12. Find the longest name using reduce()
+        String longestName = names.stream()
+                .reduce("", (a, b) -> a.length() >= b.length() ? a : b);
+
+        System.out.println("Longest name: " + longestName);
+
+        // 13. Count total characters across all names
+        int totalCharacters = names.stream()
+                .map(String::length)
+                .reduce(0, Integer::sum);
+
+        System.out.println("Total characters: " + totalCharacters);
     }
 }
