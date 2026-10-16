@@ -46,20 +46,20 @@ public class ArrayListOperations {
         }
         System.out.println();
 
-//        // 11. Sort in ascending order
-//        Collections.sort(numbers);
-//        System.out.println("Sorted: " + numbers);
-//
-//        // 12. Reverse the list
-//        Collections.reverse(numbers);
-//        System.out.println("Reversed: " + numbers);
+        // 11. Sort in ascending order
+        Collections.sort(numbers);
+        System.out.println("Sorted: " + numbers);
+
+        // 12. Reverse the list
+        Collections.reverse(numbers);
+        System.out.println("Reversed: " + numbers);
 
         // 13. Remove by value
         numbers.remove(Integer.valueOf(100));
         System.out.println("After removing value 100: " + numbers);
 
         // 14. Clear all elements
-         numbers.clear();
-         System.out.println("After clear: " + numbers);
+        numbers.clear();
+        System.out.println("After clear: " + numbers);
     }
 }

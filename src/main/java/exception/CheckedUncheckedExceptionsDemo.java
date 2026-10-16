@@ -12,6 +12,7 @@ public class CheckedUncheckedExceptionsDemo {
         file.close();
     }
 
+    @SuppressWarnings("null")
     public static void main(String[] args) {
 
         // 1. Checked Exception

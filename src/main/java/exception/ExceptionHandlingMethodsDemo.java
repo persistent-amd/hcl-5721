@@ -18,8 +18,7 @@ public class ExceptionHandlingMethodsDemo {
     static void validateAge(int age) throws InvalidAgeException {
         if (age < 18) {
             throw new InvalidAgeException(
-                    "Age must be at least 18."
-            );
+                    "Age must be at least 18.");
         }
 
         System.out.println("Age validation successful.");
@@ -27,9 +26,8 @@ public class ExceptionHandlingMethodsDemo {
 
     // Demonstrates throws with a checked exception
     static String readFirstLine() throws IOException {
-        try (BufferedReader reader =
-                     new BufferedReader(
-                             new StringReader("Hello from Java"))) {
+        try (BufferedReader reader = new BufferedReader(
+                new StringReader("Hello from Java"))) {
             return reader.readLine();
         }
     }
@@ -50,7 +48,7 @@ public class ExceptionHandlingMethodsDemo {
         System.out.println("\n2. Multiple catch blocks");
 
         try {
-            int[] numbers = {10, 20, 30};
+            int[] numbers = { 10, 20, 30 };
             System.out.println(numbers[5]);
         } catch (ArithmeticException e) {
             System.out.println("Arithmetic error.");
@@ -77,12 +75,13 @@ public class ExceptionHandlingMethodsDemo {
 
         try {
             try {
+                @SuppressWarnings("unused")
                 int result = 10 / 0;
             } catch (ArithmeticException e) {
                 System.out.println("Inner catch handled division.");
             }
 
-            int[] arr = {1, 2};
+            int[] arr = { 1, 2 };
             System.out.println(arr[5]);
 
         } catch (ArrayIndexOutOfBoundsException e) {
